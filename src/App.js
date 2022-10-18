@@ -13,18 +13,38 @@ class App extends Component {
         this.setState(newState);
     }
 
+    decreament = () => {
+        const newState = {
+            num : this.state.num - 1
+        }
+
+        if (this.state.num === 0) {
+            
+        }
+
+        else {
+            this.setState(newState);
+        }
+    }
+
     render() { 
         
         return (
-            <div style={{marginTop: "100px", marginLeft: "200px"}}>
-                <button>minus</button>
+            <div className="col-lg-12 mt-4 text-center">
+                <button className="btn btn-danger" onClick={this.decreament}>minus</button>
                     {
                         this.state.num
                     }
-                <button onClick={this.increament}>plus</button>
+                <button className="btn btn-success" onClick={this.increament}>plus</button>
             </div>
         );
     }
 }
  
 export default App;
+
+/*
+task:
+----
+1. when number is 0, the minus button's color will be yello.
+*/
