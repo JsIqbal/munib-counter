@@ -59,31 +59,31 @@
 // // ----------------------------------------------
 
 // // -----------------native map function
-// const sMap = [1,2,3];
+const sMap = [1, 2, 3];
 
-// function mapCallback(number, index) {
-//     console.log(number,' ', index);
-//     const x = 10;
-//     return(
-//         "iqbal is awsome"
-//     );
-// }
+function mapCallback(number, index) {
+    console.log(number,' ', index);
+    const x = 10;
+    return(
+        "iqbal is awsome"
+    );
+}
 
-// const returned = sMap.map(mapCallback);
-// console.log(returned);
+const returned = sMap.map(mapCallback);
+console.log(returned);
 
-// class Array {
-//     arra = [];
+class Array {
+    arra = [];
 
-//     map(callback) {
-//         for (index = 0; index < this.lenght; index++) { 
-//             const one = callback(this[index], index);
+    map(callback) {
+        for (index = 0; index < this.lenght; index++) { 
+            const one = callback(this[index], index);
 
-//             arra.push(one);
-//         }
-//         return arra;
-//     }
-// }
+            arra.push(one);
+        }
+        return arra;
+    }
+}
 // -------------------
 /*
 function setState (object) {
@@ -102,8 +102,16 @@ function setState (object) {
 // console.log(arra);
 // console.log(b);
 
-var c = [1, 2, "a"]; 
-var d = c;
-d[1] = 100;
+// var c = [1, 2, "a"]; 
+// var d = c;
+// d[1] = 100;
 
-console.log(c);
+// console.log(c);
+
+// function sum () {
+//     return "Iqbal is the next Google Engineer!";
+// }
+
+// const get = sum();
+
+// console.log(get)
