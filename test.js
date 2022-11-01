@@ -115,3 +115,5 @@ function setState (object) {
 // const get = sum();
 
 // console.log(get)
+
+// react-bootstrap, splitting components, project structure, spread operator
