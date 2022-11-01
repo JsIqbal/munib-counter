@@ -5,7 +5,6 @@ class Box extends Component {
         num : 5,
         color: 'btn btn-danger me-2'
     }
-
     increament = () => {
         const newState = {
             num : this.state.num + 1,
@@ -37,7 +36,7 @@ class Box extends Component {
         }
     }
 
-    render() { 
+    render() {
         return (
             <div className="col-lg-12 mt-4 text-center">
                 <button className={this.state.color} onClick={this.decreament}>minus</button>
